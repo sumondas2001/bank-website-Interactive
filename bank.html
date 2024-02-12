@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Bank site</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+     <header>
+          <h1 class="text-5xl text-center mt-5">Welcome to your
+               <span class="font-semibold text-green-700"> Bank Site </span>!!!
+          </h1>
+     </header>
+     <main>
+          <section class="mt-12">
+               <div class="grid grid-cols-3 gap-5 w-9/12 mx-auto text-white ">
+                    <div class="bg-orange-500 p-8  text-center rounded-xl ">
+                         <h4 class="text-2xl">Doposit</h4>
+                         <h2  class="text-5xl">$<span id="doposit-money">00</span></h2>
+                    </div>
+                    <div class="bg-lime-500 p-8 text-center rounded-xl">
+                         <h4 class="text-2xl">Withdrow</h4>
+                         <h2 class="text-5xl">$<span id="withdrow-money">00</span></h2>
+                    </div>
+                    <div class="bg-red-500 p-8 text-center rounded-xl">
+                         <h4 class="text-2xl">Balance</h4>
+                         <h2  class="text-5xl">$<span id="balance-total">1240</span></h2>
+                    </div>
+               </div>
+
+          </section>
+
+          <!-- Doposit section -->
+          <section class="mt-12">
+               <div class="grid grid-cols-2 gap-5 w-9/12 mx-auto text-white ">
+                    <div class="bg-fuchsia-500 p-8  rounded-xl">
+                         <h4 class="text-2xl mb-5"> Please Doposit</h4>
+                         <input class="block	 w-9/12 p-2 text-black" type="text" placeholder="Please Enter Your Money..." name=""
+                         id="doposit-filed">
+
+
+                         <button id="btn-login"
+                         class="bg-orange-500 hover:bg-sky-700 px-7 py-2 mt-5 rounded-lg font-semibold text-white">Doposit</button>
+
+
+                    </div>
+                    <div class="bg-sky-500 p-8  rounded-xl">
+                         <h4 class="text-2xl mb-5">Please Withdrow</h4>
+                         <input class="block	 w-9/12 p-2 text-black" type="text" placeholder="Please Enter Your Money..." name=""
+                         id="input-withdeow">
+
+
+                         <button id="btn-withdrow"
+                         class="bg-orange-500 hover:bg-sky-700 px-7 py-2 mt-5 rounded-lg font-semibold text-white">Withdrow</button>
+
+                    </div>
+
+               </div>
+
+          </section>
+
+     </main>
+     <script src="js/doposit.js"></script>
+     <script src="js/withdrow.js"></script>
+
+</body>
+
+</html>
